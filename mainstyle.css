@@ -1,37 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 *{
     box-sizing: border-box;
 }
 
 body{
- background-image: url('bg.jfif');
- background-repeat: no-repeat;
+    background-color: black;
+}
+
+.wrapperBody{
+    background-image: url('bg.jfif');
+    background-repeat: no-repeat;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: auto;
+    margin-top: 0px;
 }
 
 .subtitle{
     font-size: 16px;
     font-style: italic;
 }
+
 nav{
     margin-left: 15%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 37px;
+    font-size: 47px;
     letter-spacing: 4px;
     margin-left: 15%;
-    margin-top: 280px;
+    margin-top: 175px;
     margin-bottom: 20px;
 }
 
 section{
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 1%;
     margin-left: 20%;
     margin-right: 20%;
+}
+/*LOVE HATE*/
+a{ text-decoration: none; }
+
+a:link{
+    color:rgb(80, 104, 119);
+}
+
+a:visited{
+    color:rgb(9, 54, 82);
+}
+
+a:hover{
+    color:rgb(141, 182, 207);
+}
+
+a:active{
+    color:rgb(64, 190, 190);
 }
