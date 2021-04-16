@@ -3,22 +3,25 @@
 /* mobile-first design*/
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: black;
-    background-repeat: no-repeat;
-    margin: 0;
-    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 .wrapper{ /*wrap our content in the body*/
-    background-image: url('images/bg.jfif');
-    background-repeat: no-repeat;
+    background-image: url('images/bg15.png');
+    background-size: cover;
     margin-left: 3%;
     margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 10%;
     padding-bottom: 100%;
+    background-color: rgb(156, 109, 109);
 }
 
 .subtitle{
@@ -26,7 +29,27 @@ body{
     font-style: italic;
 }
 
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+fieldset{
+    background-color: white;
+    width: 50%;
+    height: 340px;
+    margin-left: 25%;
+    text-align: left;
+
+}
+
+fieldset textarea{
+    width: 200px;
+    height: 180px;
+}
+
 .flexNav{
+    margin-top: 12%;
     display: flex;
     font-size: 13px;
     justify-content: space-evenly;
@@ -42,7 +65,10 @@ h1{
 
 hr{
     margin-top: 20px;
-    border-style:groove;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
     border-color: rgba(119, 119, 119, 0.13);
     border-width: 1px;
     width: 80%;
@@ -52,6 +78,8 @@ section{
     font-size: 12px;
     margin-left: 15%;
     margin-right: 15%;
+    /* background-color: gray;
+    opacity: 0.5; */
 }
 
 /* "LOVE HATE" */
@@ -94,12 +122,21 @@ a:active{
     }
 
     .flexNav{
+        margin-top: 4%;
         display: flex;
         font-size: 13px;
         justify-content: center;
     }
 
-    a{
+    nav a{
         margin: 0px 8px;
     }
+
+    fieldset{
+        background-color: white;
+        width: 50%;
+        margin-left: 25%;
+        text-align: left;
+    }
+
 }
