@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
+/* mobile-first design*/
 *{
     box-sizing: border-box;
 }
@@ -10,48 +10,51 @@ body{
     background-repeat: no-repeat;
     margin: 0;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper{ /*wrap our content in the body*/
     background-image: url('images/bg.jfif');
     background-repeat: no-repeat;
-    /* background-size: contain; background image size adjusts to window size */
     margin-left: 3%;
     margin-right: 3%;
-    padding-top: 10%;
     padding-bottom: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .subtitle{
-    font-size: 16px;
+    font-size: 12px;
     font-style: italic;
 }
 
-nav{
-    padding-left: 15%;
-    font-family: 'Montserrat', sans-serif;
+.flexNav{
+    display: flex;
     font-size: 13px;
+    justify-content: space-evenly;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 47px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
     letter-spacing: 4px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 5px;
+    align-items: center;
+}
+
+hr{
+    margin-top: 20px;
+    border-style:groove;
+    border-color: rgba(119, 119, 119, 0.13);
+    border-width: 1px;
+    width: 80%;
 }
 
 section{
-    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-/*LOVE HATE*/
+/* "LOVE HATE" */
 a{ text-decoration: none; } /*remove link underline default*/
 
 a:link{
@@ -69,4 +72,34 @@ a:hover{
 
 a:active{
     color:rgb(64, 190, 190);
+}
+
+/* desktop design*/
+@media screen and (min-width: 600px) {
+    .wrapper{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    h1{
+        font-size: 47px;
+        align-items: flex-start;
+        letter-spacing: 4px;
+        padding-top: 12%;
+        margin-left: 20%;
+    }
+
+    hr{
+        width: 40%;
+    }
+
+    .flexNav{
+        display: flex;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    a{
+        margin: 0px 8px;
+    }
 }
