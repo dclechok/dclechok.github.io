@@ -35,10 +35,11 @@ legend{
 }
 
 fieldset{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.664);
     width: 50%;
     height: 340px;
-    margin-left: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
     text-align: left;
 
 }
@@ -46,6 +47,7 @@ fieldset{
 fieldset textarea{
     width: 200px;
     height: 180px;
+    resize: none;
 }
 
 .flexNav{
@@ -78,8 +80,15 @@ section{
     font-size: 12px;
     margin-left: 15%;
     margin-right: 15%;
-    /* background-color: gray;
-    opacity: 0.5; */
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons img{
+    padding: 10px;
 }
 
 /* "LOVE HATE" */
@@ -103,7 +112,7 @@ a:active{
 }
 
 /* desktop design*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
     .wrapper{
         margin-left: 6%;
         margin-right: 6%;
