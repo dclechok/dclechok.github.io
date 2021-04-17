@@ -75,6 +75,10 @@ h2{
     margin-top: 4%;
 }
 
+h3 img{
+    width: 14px;
+}
+
 hr{
     margin: 20px auto;
     border-style: groove;
@@ -87,6 +91,10 @@ section{
     font-size: 12px;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.portfolio a:link{
+    color:rgb(218, 182, 66)
 }
 
 .icons{
