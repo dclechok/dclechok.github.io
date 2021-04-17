@@ -15,10 +15,10 @@ body{
 
 .wrapper{ /*wrap our content in the body*/
     background-image: url('images/bg15.png');
-    background-size: cover;
+    background-size: contain;
     margin: 3% 3% 10% 3%;
     padding-bottom: 100%;
-    background-color: rgb(156, 109, 109);
+    background-color:white;
 }
 
 .subtitle{
