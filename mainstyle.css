@@ -10,15 +10,19 @@
 body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    overflow: scroll;
+    color: black;
+    overflow: scroll;
 }
 
 .wrapper{ /*wrap our content in the body*/
-    background-image: url('images/bg15.png');
-    background-size: contain;
     margin: 3% 3% 10% 3%;
     padding-bottom: 100%;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
+    background-image: url('images/bg6.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    
 }
 
 .subtitle{
@@ -32,7 +36,7 @@ legend{
 }
 
 fieldset{
-    background-color: rgba(255, 255, 255, 0.664);
+    background-color: rgba(216, 216, 216, 0.664);
     width: 50%;
     height: 340px;
     margin-left: 2%;
@@ -48,7 +52,7 @@ fieldset textarea{
 }
 
 .flexNav{
-    margin-top: 12%;
+    margin-top: 3%;
     display: flex;
     font-size: 13px;
     justify-content: space-evenly;
@@ -62,8 +66,15 @@ h1{
     align-items: center;
 }
 
+h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
 hr{
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
     border-style: groove;
     border-color: rgba(119, 119, 119, 0.13);
     border-width: 1px;
@@ -105,14 +116,21 @@ a:active{
 }
 
 /* desktop design*/
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
+
+    body{
+        overflow: hidden;
+    }
     .wrapper{
         margin-left: 6%;
         margin-right: 6%;
+        background-image: url('images/bg6.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     h1{
-        font-size: 47px;
+        font-size: 67px;
         align-items: flex-start;
         letter-spacing: 4px;
         padding-top: 12%;
@@ -135,7 +153,6 @@ a:active{
     }
 
     fieldset{
-        background-color: white;
         width: 50%;
         margin-left: 25%;
         text-align: left;
