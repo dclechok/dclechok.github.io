@@ -120,9 +120,6 @@ a:active{
 /* desktop design*/
 @media screen and (min-width: 600px) {
 
-    body{
-        overflow: hidden;
-    }
     .wrapper{
         margin-left: 6%;
         margin-right: 6%;
